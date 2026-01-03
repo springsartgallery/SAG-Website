@@ -1,0 +1,58 @@
+/* General Setup */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: #000; color: #fff; line-height: 1.6; }
+.accent { color: #fff; text-decoration: underline; }
+
+/* Parallax Stationary Backgrounds */
+.parallax-section {
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; align-items: center; justify-content: center;
+}
+.img1 { background-image: url('img1.jpg'); filter: grayscale(0%); } 
+.img2 { background-image: url('img2.jpg'); filter: grayscale(0%); }
+
+.glass-portal {
+    background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(0.01px);
+    padding: 60px; border: 1px solid #333; text-align: center; max-width: 800px;
+}
+.glass-portal h1 { font-size: 3.5rem; letter-spacing: 2px; border-bottom: 2px solid #fff; margin-bottom: 20px; }
+
+/* GRADIENT OUTLINE BUTTONS (Grayscale) */
+.grad-btn {
+    display: inline-block; padding: 15px 30px; margin: 10px; color: #fff;
+    text-decoration: none; font-weight: bold; background: #000;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #fff, #444, #fff) 1;
+    transition: 0.3s;
+}
+.grad-btn:hover { background: #fff; color: #000; }
+
+/* Dashboard Layout */
+.dashboard-wrapper { display: flex; height: 100vh; width: 100vw; overflow: hidden; }
+.task-bar { width: 20%; min-width: 250px; background: #111; padding: 30px; border-right: 1px solid #333; }
+.brand { color: #fff; font-weight: 900; margin-bottom: 40px; letter-spacing: 2px; text-align: center; }
+
+.menu-grad-btn {
+    display: block; padding: 15px; margin-bottom: 12px; color: #888;
+    text-decoration: none; font-weight: bold; font-size: 0.8rem; text-align: center;
+    border: 1px solid transparent; border-image: linear-gradient(to right, #333, #111) 1;
+}
+.menu-grad-btn.active { color: #fff; border-image: linear-gradient(to right, #fff, #888) 1; background: #222; }
+.menu-grad-btn.exit { border-image: linear-gradient(to right, #555, #000) 1; }
+.menu-grad-btn.download { border-image: linear-gradient(to right, #888, #444) 1; color: #fff; }
+
+.workspace.max-view { width: 80%; padding: 20px; background: #0a0a0a; display: flex; flex-direction: column; }
+.viewer-header { margin-bottom: 15px; }
+.pdf-viewer.max-size { flex-grow: 1; width: 100%; border: 1px solid #333; background: #fff; }
+iframe { width: 100%; height: 100%; border: none; }
+
+/* Info Section */
+.content-section { padding: 80px 20px; background: #000; text-align: center; }
+.divider { width: 60px; height: 2px; background: #fff; margin: 15px auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.grid-card { border: 1px solid #333; padding: 30px; background: #0a0a0a; }
+.footer { text-align: center; padding: 50px; border-top: 1px solid #222; opacity: 0.6; }

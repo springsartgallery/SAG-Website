@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artist Workspace | 2026 Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-bg">
+
+    <div class="dashboard-wrapper">
+        <!-- SIDEBAR MENU (All Options Positioned Here) -->
+        <nav class="task-bar">
+            <div class="brand">DASHBOARD</div>
+            <ul class="menu">
+                <li><a href="#" class="menu-grad-btn active" data-type="doc" data-src="application-form.pdf">VIEW APPLICATION FORM</a></li>
+                <li><a href="#" class="menu-grad-btn" data-type="doc" data-src="guidelines.pdf">VIEW GUIDELINES</a></li>
+                <li><a href="#" class="menu-grad-btn" data-type="doc" data-src="floor-plan.pdf">VIEW FLOOR PLAN</a></li>
+                <li class="separator"></li>
+                <li><a href="application-form.docx" download class="menu-grad-btn download">DOWNLOAD WORD DOC</a></li>
+                <li><a href="index.html" class="menu-grad-btn exit">EXIT PORTAL</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAXIMIZED WORKSPACE VIEWPORT -->
+        <main class="workspace max-view">
+            <div class="viewer-header">
+                <h2 id="view-title">Application Form</h2>
+                <p>Use the sidebar to switch between documents.</p>
+            </div>
+            
+            <div class="pdf-viewer max-size">
+                <!-- All files load here -->
+                <iframe id="mainViewer" src="application-form.pdf"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
