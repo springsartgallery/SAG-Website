@@ -12,8 +12,8 @@ body { background: #000000; color: #fff; line-height: 1.7; scroll-behavior: smoo
 .nav-btn { padding: 8px 16px; border: 1px solid #fff; color: #fff !important; }
 
 /* Parallax Effect */
-.parallax-section { height: 70vh; background-attachment: fixed; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; }
-.img1 { background-image: url('img1.jpg'); filter: grayscale(100%); }
+.parallax-section { height: 100vh; background-attachment: fixed; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; }
+.img1 { background-image: url('img1.jpg'); filter: grayscale(0%); }
 .glass-portal { background: rgba(0,0,0,0.85); padding: 50px; border: 1px solid #333; text-align: center; max-width: 800px; }
 
 /* Content Sections */
@@ -28,7 +28,7 @@ body { background: #000000; color: #fff; line-height: 1.7; scroll-behavior: smoo
     height: 350px; 
     width: 100%; 
     border: 1px solid #333; 
-    filter: grayscale(1) contrast(1.2); /* Matches your gallery aesthetic */
+    filter: grayscale(0) contrast(1.2); /* Matches your gallery aesthetic */
     transition: 0.5s ease;
     overflow: hidden;
 }
