@@ -45,3 +45,30 @@ body { background: #000000; color: #fff; line-height: 1.7; scroll-behavior: smoo
 .task-bar { width: 260px; background: #111; padding: 40px 20px; border-right: 1px solid #333; display: flex; flex-direction: column; }
 .menu-grad-btn { display: block; padding: 15px; margin-bottom: 12px; color: #888; text-decoration: none; text-align: center; border: 1px solid transparent; border-image: linear-gradient(to right, #333, #111) 1; font-weight: bold; font-size: 0.8rem; transition: 0.3s; }
 .menu-grad-btn.active { color: #fff; border-image: linear-gradient(to right, #fff, #444) 1; background: #222; }
+
+/* Ensure the wrapper fills the full screen height */
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw;  /* 100% of the viewport width */
+    overflow: hidden;
+}
+
+/* Force the workspace to grow and fill remaining width */
+.workspace {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    background: #0a0a0a;
+}
+
+/* Make the PDF viewer fill the entire remaining workspace area */
+.pdf-viewer-max {
+    flex-grow: 1; /* Automatically takes up all available vertical space */
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #fff;
+    display: block; /* Removes any default inline spacing */
+}
+
